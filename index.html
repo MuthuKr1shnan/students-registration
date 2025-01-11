@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Students Registration</title>
+    <link rel="icon" href="mylogo.png" type="image/png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body id="body">
+    <div id="overlay"></div>
+    <div id="customAlert">
+      <div id="customAlertTitle">Alert Title</div>
+      <div id="customAlertMessage">Fill the Form before Add!!!</div>
+      <button onclick="closeCustomAlert()">OK</button>
+    </div>
+    <div class="mast-container">
+      <div class="heading">
+        <div class="bg"></div>
+        <h1>Student Registration</h1>
+      </div>
+
+      <div class="container1">
+        
+        <table class="table1">
+          <tbody>
+          <tr>
+            <th>Name:</th>
+            <td>
+              <input
+                class="txt"
+                type="text"
+                placeholder="Enter your name"
+                id="name"
+              />
+            </td>
+          </tr>
+          <tr>
+            <th>Age:</th>
+            <td>
+              <input
+                class="txt"
+                type="number"
+                placeholder="Enter your Age"
+                id="age"
+              />
+            </td>
+          </tr>
+          <tr>
+            <th>Gender:</th>
+            <td>
+
+              <label class="l-one">
+                <input type="radio" name="option" value="Male" /> Male
+              </label>
+              <label class="l-two">
+                <input type="radio" name="option" value="Female" /> Female
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <th>Course:</th>
+            <td>
+              <input
+                class="txt"
+                type="text"
+                placeholder="Enter your Coourse"
+                id="course"
+              />
+            </td>
+          </tr>
+          <tr>
+            <th>Email:</th>
+            <td>
+              <input
+                class="txt"
+                type="email"
+                placeholder="Enter your email"
+                id="email"
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="3" class="one">
+              <button class="btn stl" onclick="addData()">Add</button>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <br /><br /><br />
+      <div class="container2">
+        <table class="table2">
+          <thead class="cr">
+            <th>Name</th>
+            <th>Age</th>
+            <th>Course</th>
+            <th>Gender</th>
+            <th>Email</th>
+            <th>Action</th>
+          </thead>
+          <tbody id="tbody">
+            <tr>
+              <td>John</td>
+              <td>20</td>
+              <td>Course</td>
+              <td>John</td>
+              <td>20</td>
+              <td>
+                <button onclick="deleteMe(event)" class="dlt">delete</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
