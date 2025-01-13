@@ -283,3 +283,5 @@ h1 {
       .l-two>input{
         accent-color: rgba(17, 221, 6, 0.411);
       }
+input:focus{
+    all:unset;}
