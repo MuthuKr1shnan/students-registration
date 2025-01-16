@@ -31,12 +31,7 @@ function addData() {
         let email = document.getElementById("email").value;
         a.innerHTML += `<tr><td>${nam}</td><td>${age}</td><td>${course}</td><td>${female}</td><td>${email}</td><td><button  class="dlt" onclick="deleteMe(event)" >delete</button></td></tr>`;
 
-        document.getElementById("name").value = "";
-        document.getElementById("age").value = "";
-        male.value="";
-        document.getElementById("course").value = "";
-        document.getElementById("email").value = "";
-
+      
     } else {
         showCustomAlert('Warning !', 'Fill the Form before Add!!!');
     }
