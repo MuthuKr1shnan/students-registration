@@ -35,10 +35,12 @@ function addData() {
     } else {
         showCustomAlert('Warning !', 'Fill the Form before Add!!!');
     }
-     document.getElementById("name").value = "";
+    
+}
+
+ document.getElementById("name").value = "";
         document.getElementById("age").value = "";
         male.value="";
         document.getElementById("course").value = "";
         document.getElementById("email").value = "";
-}
 
