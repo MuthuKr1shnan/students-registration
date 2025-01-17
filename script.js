@@ -37,7 +37,7 @@ function addData() {
         document.getElementById("course").value = "";
         document.getElementById("email").value = "";
         document.querySelector('input[name="option"]:check');
-        male.checked = false;
+        male.forEach(radio => male.checked = false);
         
       
     } else {
