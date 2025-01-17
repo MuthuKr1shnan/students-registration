@@ -38,7 +38,10 @@ function addData() {
         document.getElementById("email").value = "";
         document.querySelector('input[name="option"]:check');
        const radios = document.querySelectorAll('input[name="option"]');
-            radios.forEach(radio => radio.checked = false);
+          for (let i = 0; i < radios.length; i++) {
+    radios[i].checked = false;
+}
+
         
       
     } else {
