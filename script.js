@@ -36,7 +36,7 @@ function addData() {
       
         document.getElementById("course").value = "";
         document.getElementById("email").value = "";
-        document.querySelector('input[name="option"]:checked').value = "";
+        document.querySelector('input[name="option"]:checke')=false;
       
     } else {
         showCustomAlert('Warning !', 'Fill the Form before Add!!!');
